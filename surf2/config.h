@@ -1,46 +1,41 @@
 /* modifier 0 means no modifier */
 static int surfuseragent    = 1;  /* Append Surf version to default WebKit user agent */
 static char *fulluseragent  = ""; /* Or override the whole user agent string */
-static char *scriptfile     = "~/.local/etc/surf/script.js";
-static char *styledir       = "~/.local/etc/surf/styles/";
-static char *cachedir       = "~/.local/cache/surf/";
-static char *cookiefile     = "~/.local/etc/surf/cookies.txt";
+static char *scriptfile     = "~/.surf/script.js";
+static char *styledir       = "~/.surf/styles/";
+static char *cachedir       = "~/.surf/cache/";
+
+static int kioskmode       = 0;     /* Ignore shortcuts */
+static int showindicators  = 1;     /* Show indicators in window title */
+static int runinfullscreen = 0;     /* Run in fullscreen mode by default */
+
+static guint defaultfontsize = 12;   /* Default font size */
+static gfloat zoomlevel     = 1.0;   /* Default zoom level */
+
+/* Soup default features */
+static char *cookiefile     = "~/.surf/cookies.txt";
+static char *cookiepolicies = "Aa@"; /* A: accept all; a: accept nothing,
+                                      * @: accept no third party */
+static int strictssl       = 0; /* Refuse untrusted SSL connections */
+
+/* Languages */
+static int enablespellchecking         = 0;
+static const char *spellinglanguages[] = { "en_US", NULL };
+static const char *preferedlanguages[] = { NULL };
 
 /* Webkit default features */
-static Parameter defconfig[ParameterLast] = {
-	SETB(AcceleratedCanvas,  1),
-	SETB(CaretBrowsing,      0),
-	SETV(CookiePolicies,     "@Aa"),
-	SETB(DiskCache,          1),
-	SETB(DNSPrefetch,        0),
-	SETI(FontSize,           12),
-	SETB(FrameFlattening,    0),
-	SETB(Geolocation,        0),
-	SETB(HideBackground,     0),
-	SETB(Inspector,          0),
-	SETB(JavaScript,         1),
-	SETB(KioskMode,          0),
-	SETB(LoadImages,         1),
-	SETB(MediaManualPlay,    0),
-	SETB(Plugins,            1),
-	SETV(PreferredLanguages, ((char *[]){ NULL })),
-	SETB(RunInFullscreen,    0),
-	SETB(ScrollBars,         1),
-	SETB(ShowIndicators,     1),
-	SETB(SiteQuirks,         1),
-	SETB(SpellChecking,      0),
-	SETV(SpellLanguages,     ((char *[]){ "en_US", NULL })),
-	SETB(StrictSSL,          0),
-	SETB(Style,              1),
-	SETF(ZoomLevel,          1.0),
-};
-
-static UriParameters uriparams[] = {
-	{ "(://|\\.)suckless\\.org(/|$)", {
-	  FSETB(JavaScript, 0),
-	  FSETB(Plugins,    0),
-	}, },
-};
+static int enablescrollbars      = 1;
+static int enablecaretbrowsing   = 1;
+static int enablecache           = 1;
+static int enableplugins         = 1;
+static int enablescripts         = 1;
+static int enableinspector       = 1;
+static int enablestyle           = 1;
+static int loadimages            = 1;
+static int hidebackground        = 0;
+static int allowgeolocation      = 1;
+static int enablednsprefetching  = 0;
+static int enableframeflattening = 0;
 
 static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
                                     WEBKIT_FIND_OPTIONS_WRAP_AROUND;
@@ -58,7 +53,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
 /* DOWNLOAD(URI, referer) */
 #define DOWNLOAD(d, r) { \
         .v = (const char *[]){ "/bin/sh", "-c", \
-             "st -e /bin/sh -c \"curl -g -L -J -O --user-agent '$1'" \
+             "st -e /bin/sh -c \"curl -L -J -O --user-agent '$1'" \
              " --referer '$2' -b $3 -c $3 '$0';" \
              " sleep 5;\"", \
              d, useragent, r, cookiefile, NULL \
@@ -78,7 +73,7 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
 /* VIDEOPLAY(URI) */
 #define VIDEOPLAY(u) {\
         .v = (const char *[]){ "/bin/sh", "-c", \
-             "mpv --really-quiet \"0\"", u, NULL \
+             "mpv --really-quiet \"$0\"", u, NULL \
         } \
 }
 
@@ -89,7 +84,6 @@ static WebKitFindOptions findopts = WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE |
  */
 static SiteStyle styles[] = {
 	/* regexp               file in $styledir */
-	{ ".*duckduckgo.com.*",     "ads.css" },
 	{ ".*",                 "default.css" },
 };
 
@@ -115,16 +109,13 @@ static Key keys[] = {
 	{ MODKEY,                GDK_KEY_l,      navigate,   { .i = +1 } },
 	{ MODKEY,                GDK_KEY_h,      navigate,   { .i = -1 } },
 
-	/* Currently we have to use scrolling steps that WebKit2GTK+ gives us
-	 * d: step down, u: step up, r: step right, l:step left
-	 * D: page down, U: page up */
-	{ MODKEY,                GDK_KEY_j,      scroll,     { .i = 'd' } },
-	{ MODKEY,                GDK_KEY_k,      scroll,     { .i = 'u' } },
-	{ MODKEY,                GDK_KEY_b,      scroll,     { .i = 'U' } },
-	{ MODKEY,                GDK_KEY_space,  scroll,     { .i = 'D' } },
-	{ MODKEY,                GDK_KEY_i,      scroll,     { .i = 'r' } },
-	{ MODKEY,                GDK_KEY_u,      scroll,     { .i = 'l' } },
-
+	                                                     /* in page % */
+	{ MODKEY,                GDK_KEY_j,      scroll_v,   { .i = +10 } },
+	{ MODKEY,                GDK_KEY_k,      scroll_v,   { .i = -10 } },
+	{ MODKEY,                GDK_KEY_b,      scroll_v,   { .i = -50 } },
+	{ MODKEY,                GDK_KEY_space,  scroll_v,   { .i = +50 } },
+	{ MODKEY,                GDK_KEY_i,      scroll_h,   { .i = +10 } },
+	{ MODKEY,                GDK_KEY_u,      scroll_h,   { .i = -10 } },
 
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_j,      zoom,       { .i = -1 } },
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_k,      zoom,       { .i = +1 } },
@@ -143,6 +134,7 @@ static Key keys[] = {
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_a,      togglecookiepolicy, { 0 } },
 	{ 0,                     GDK_KEY_F11,    togglefullscreen, { 0 } },
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_o,      toggleinspector, { 0 } },
+	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_m,      togglestyle, { 0 } },
 
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_c,      toggle,     { .i = CaretBrowsing } },
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_f,      toggle,     { .i = FrameFlattening } },
@@ -151,7 +143,6 @@ static Key keys[] = {
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_i,      toggle,     { .i = LoadImages } },
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_v,      toggle,     { .i = Plugins } },
 	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_b,      toggle,     { .i = ScrollBars } },
-	{ MODKEY|GDK_SHIFT_MASK, GDK_KEY_m,      toggle,     { .i = Style } },
 };
 
 /* button definitions */
@@ -160,7 +151,7 @@ static Button buttons[] = {
 	/* target       event mask      button  function        argument        stop event */
 	{ OnLink,       0,              2,      clicknewwindow, { .b = 0 },     1 },
 	{ OnLink,       MODKEY,         2,      clicknewwindow, { .b = 1 },     1 },
-	{ OnLink,       MODKEY,         1,      clickexternplayer, { 0 },       1 },
+	{ OnLink,       MODKEY,         1,      clicknewwindow, { .b = 1 },     1 },
 	{ OnAny,        0,              8,      clicknavigate,  { .i = -1 },    1 },
 	{ OnAny,        0,              9,      clicknavigate,  { .i = +1 },    1 },
 	{ OnMedia,      MODKEY,         1,      clickexternplayer, { 0 },       1 },
