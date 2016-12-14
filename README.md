@@ -1,2 +1,2 @@
 # ports
-ports for crux linux
+ports for crux(3.2) linux
