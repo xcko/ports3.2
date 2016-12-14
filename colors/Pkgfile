@@ -1,0 +1,26 @@
+# Description: extract colors from pictures
+# URL: http://2f30.org
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Depends on: libpng
+
+name=colors
+version=git
+release=1
+source=()
+gitsource=git://git.2f30.org/colors.git
+
+build() {
+	if cd "$name" 2> /dev/null; then
+		git pull
+	else
+		git clone $gitsource "$name"
+		cd "$name"
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+	cc bin/hex2col.c -o bin/hex2col
+	cc bin/hexsort.c -o bin/hexsort
+	cp bin/hex2col $PKG/usr/bin/hex2col
+	cp bin/hexsort $PKG/usr/bin/hexsort
+}

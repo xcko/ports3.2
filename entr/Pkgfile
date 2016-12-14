@@ -1,0 +1,16 @@
+# Description: Run arbitrary commands when files change
+# URL: entrproject.org
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Depends on:
+
+name=entr
+version=3.6
+release=1
+source=(http://entrproject.org/code/entr-$version.tar.gz)
+
+build() {
+	cd eradman-$name-c15b0be493fc
+	./configure
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+}

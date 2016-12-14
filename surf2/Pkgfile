@@ -1,0 +1,24 @@
+# Description: Simple webkit-based browser (webkit2 port)
+# URL: http://surf.suckless.org/
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Depends on: gtk3 webkitgtk
+# Opt Depends: dmenu
+
+name=surf2
+version=git
+release=1
+source=(config.h)
+
+build() {
+	if cd "$name" 2> /dev/null; then
+		git pull
+	else
+		git clone http://git.suckless.org/surf --branch surf-webkit2 --single-branch "$name"
+		cd "$name"
+	fi
+	
+	cp $SRC/config.h .
+	make
+	make PREFIX=/usr DESTDIR=$PKG install
+	install -D -m 644 surf.png $PKG/usr/share/pixmaps/surf.png
+}

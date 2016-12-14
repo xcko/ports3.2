@@ -1,0 +1,22 @@
+# Description: simple image viewer
+# URL: http://www.johnhawthorn.com/meh
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Depends on: git xorg-libx11 libjpeg-turbo libpng figlib
+# Opt Depends: imagemagick
+
+name=meh
+version=git
+release=1
+source=()
+
+build() {
+	if cd "$name" 2> /dev/null; then
+		git pull
+	else
+		git clone https://github.com/jhawthorn/meh.git "$name"
+		cd "$name"
+	fi
+
+	make
+	make DESTDIR=$PKG PREFIX=/usr install
+}

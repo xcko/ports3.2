@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "lemon     -benis-lemon-medium-r-normal-*-10-110-75-75-m-50-iso10646-1" >> /usr/share/fonts/X11/misc/fonts.alias
+mkfontdir /usr/share/fonts/X11/misc
+mkfontscale /usr/share/fonts/X11/misc

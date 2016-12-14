@@ -1,0 +1,28 @@
+# Description: Small ncurses text browser written in C by Arne Thomassen.
+# URL: http://retawq.sourceforge.net/
+# Maintainer: lemon lemon at bitmessage dot ch
+# Packager: lemon lemon at bitmessage dot ch
+# Depends on: gcc ncurses
+
+name=retawq
+version=0.2.6c
+release=1
+source=(http://prdownloads.sourceforge.net/retawq/retawq-$version.tar.gz)
+
+build () {
+    cd $name-$version
+    ./configure --set-tls=2 \
+		--path-archprefix=/usr \
+		--path-prefix=/usr/share \
+		--set-execext=1 \
+		--set-tg=ncurses \
+		--enable-local-cgi
+		#--disable-textmodemouse
+
+    # accept utf-8
+    #sed -i 's/iso-8859-1/iso-10646-1/' resource.c
+
+    make
+    sed -i 's/\/usr/${DESTDIR}\/usr/' Makefile
+    make DESTDIR=$PKG install-bin install-man
+} 

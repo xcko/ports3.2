@@ -1,0 +1,18 @@
+# Description: A terminal emulator for the frame buffer
+# URL: https://code.google.com/archive/p/fbterm/
+# Packager: lemon, lemon at bitmessage dot ch
+# Depends on: fontconfig
+# Opt Depends: gpm
+
+name=fbterm
+version=1.7.0
+release=1
+source=(https://storage.googleapis.com/google-code-archive-downloads/v2/code.google.com/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version%.?}
+	./configure --prefix=/usr
+	make
+	install -Dm644 terminfo/fbterm "${PKG}/usr/share/terminfo/f/fbterm"
+	make DESTDIR=${PKG} TERMINFO="${PKG}/usr/share/terminfo" install
+}

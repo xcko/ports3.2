@@ -1,0 +1,19 @@
+# Description:	Chameleon X Cursor Theme in pearl
+# URL:			http://www.kde-look.org/content/show.php?content=38459
+# Maintainer:	lemon, lemon at bitmessage dot ch
+# Packager:		lemon, lemon at bitmessage dot ch
+# Depends on:	xorg-libxcursor
+
+name=xorg-cursor-chameleon-pearl
+version=0.5
+release=1
+source=(http://www.egregorion.net/works/chameleon/Chameleon-Pearl-${version}.tar.bz2)
+
+build() {
+	mkdir -p "$PKG/usr/share/icons"
+	cp -r \
+	"$SRC/Chameleon-Pearl-Large-0.5" \
+	"$SRC/Chameleon-Pearl-Regular-0.5" \
+	"$SRC/Chameleon-Pearl-Small-0.5" \
+	"$PKG/usr/share/icons"
+}

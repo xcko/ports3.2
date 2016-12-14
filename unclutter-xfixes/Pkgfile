@@ -1,0 +1,25 @@
+# Description: Hide the cursor in X
+# URL:         https://github.com/Airblader/unclutter-xfixes#branch=master
+# Maintainer:  lemon, lemon at bitmessage dot ch
+# Packager:  lemon, lemon at bitmessage dot ch
+# Depends on:  libxi libx11 libxfixes libev asciidoc
+
+name=unclutter-xfixes
+version=git
+branch=master
+release=1
+source=()
+
+build() {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+            git fetch -q; git reset --hard origin/$branch
+    else
+            git clone git://github.com/Airblader/unclutter-xfixes -b $branch $name
+            cd $name
+    fi
+
+    make
+    make DESTDIR=$PKG install
+}

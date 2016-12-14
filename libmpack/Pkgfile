@@ -1,0 +1,21 @@
+# Description: A small binary serialization /RPC library that implements both the msgpack and msgpack-rpc specification.
+# URL:         https://github.com/tarruda/libmpack
+# Maintainer:  lemon, lemon at bitmessage dot ch
+# Depends on:  lua
+
+name=libmpack
+version=1.0.3
+release=1
+source=(https://github.com/tarruda/$name/archive/$version.tar.gz)
+
+build() {
+	cd libmpack-$version
+
+	make PREFIX=/usr
+
+	#lua
+	gcc -O2 -fPIC -I/usr/include -c binding/lua/lmpack.c -o lmpack.o
+	gcc -shared -o mpack.so.5.3 lmpack.o
+	install -Dm755 mpack.so.5.3 "$PKG/usr/lib/lua/5.3/mpack.so"
+
+}

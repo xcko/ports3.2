@@ -1,0 +1,26 @@
+# Description: ssh library
+# URL:         http://libssh.org
+# Maintainer:  lemon, lemon at bitmessage dot ch
+# Packager:    lemon, lemon at bitmessage dot ch
+# Depends on:  cmake git
+
+name=libssh-git
+version=git
+release=1
+source=()
+
+build () {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+            git fetch -q; git reset --hard origin/master
+    else
+            git clone https://git.libssh.org/projects/libssh.git $name
+            cd $name
+    fi
+
+    mkdir -p build
+    cd build
+    cmake .. -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_BUILD_TYPE=Release
+    make DESTDIR=$PKG install
+}

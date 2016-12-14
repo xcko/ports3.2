@@ -1,0 +1,16 @@
+# Description:	Programmers calculator for the command line
+# URL:			https://github.com/vapier/pcalc
+# Maintainer:	lemon, lemon at bitmessage dot ch
+# Packager:		lemon, lemon at bitmessage dot ch
+# Depends on:
+
+name=pcalc
+version=3
+release=1
+source=(https://github.com/vapier/pcalc/archive/v${version}.tar.gz)
+
+build() {
+	cd $name-$version
+	make
+	make DESTDIR=$PKG install
+}

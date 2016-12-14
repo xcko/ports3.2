@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/zsh/
+-rw-r--r--	root/root	etc/zsh/zlogin
+-rw-r--r--	root/root	etc/zsh/zlogout
+-rw-r--r--	root/root	etc/zsh/zprofile
+-rw-r--r--	root/root	etc/zsh/zshenv
+-rw-r--r--	root/root	etc/zsh/zshrc

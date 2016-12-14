@@ -1,0 +1,38 @@
+# Description: Phallus' mod of lime with better kerning, more distinguished characters, and powerline/icon support.
+# URL: https://github.com/phallus/fonts
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Packager: lemon, lemon at bitmessage dot ch
+# Depends on: git xorg-bdftopcf xorg-mkfontdir xorg-mkfontscale xorg-xset fontconfig xorg-font-util gzip
+
+name=xorg-font-lemon
+version=git
+release=1
+source=()
+
+build () {
+    cd $PKGMK_SOURCE_DIR
+
+    if cd $name; then
+            git fetch -q; git reset --hard origin/master
+    else
+            git clone https://github.com/phallus/fonts.git $name
+            cd $name
+    fi
+
+    # needed to comply with some libraries in xorg
+    cp lemon.bdf  lemon-ISO10646.bdf
+    maps=(ISO8859-1 ISO8859-2 ISO8859-4 ISO8859-9 ISO8859-15)
+
+    sed -i '/^\(FONT\|CHARSET_REGISTRY\)/s/ISO8859/ISO10646/' lemon.bdf
+    for m in "${maps[@]}"; do
+        ucs2any "lemon.bdf" "/usr/share/fonts/X11/util/map-$m" "$m"
+    done
+
+    for f in lemon-ISO*.bdf; do
+        bdftopcf -o "${f%.bdf}.pcf" "$f"
+        gzip -f "${f%.bdf}.pcf"
+    done
+
+    mkdir -p $PKG/usr/share/fonts/X11/misc
+    mv lemon-ISO*.pcf.gz $PKG/usr/share/fonts/X11/misc
+}

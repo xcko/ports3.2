@@ -1,0 +1,14 @@
+# Description: grml's zsh setup as system wide config
+# URL: http://grml.github.com/
+# Maintainer: lemon, at bitmessage dot ch
+# Depends on: zsh
+	
+name=grml-zsh-git
+version=git
+release=1
+source=(http://git.grml.org/f/grml-etc-core/etc/zsh/{zshrc,zshenv,zlogin,zlogout,zprofile})
+
+build() {
+	mkdir -p $PKG/etc/zsh
+	cp $SRC/z* $PKG/etc/zsh/
+}

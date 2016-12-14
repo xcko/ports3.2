@@ -1,0 +1,16 @@
+# Description: Simple pointer warping tool for X. Warps the mouse pointer to a given position x y.
+# URL:         http://tools.suckless.org/x/swarp
+# Maintainer:  lemon lemon at bitmessage dot ch
+# Packager:  lemon lemon at bitmessage dot ch
+# Depends on:  xorg-libx11
+
+name=swarp
+version=0.1
+release=1
+source=(http://dl.suckless.org/tools/$name-$version.tar.gz)
+
+build () {
+    cd "$name-$version"
+    make
+    make DESTDIR=$PKG PREFIX=/usr install
+}

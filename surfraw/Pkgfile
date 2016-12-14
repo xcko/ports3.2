@@ -1,0 +1,17 @@
+# Description: Small ncurses text browser written in C by Arne Thomassen.
+# URL: http://surfraw.alioth.debian.org/
+# Maintainer: lemon, lemon at bitmessage dot ch
+# Packager: lemon, lemon at bitmessage dot ch
+# Depends on: libwww-perl
+
+name=surfraw
+version=2.2.9
+release=1
+source=(http://surfraw.alioth.debian.org/dist/surfraw-2.2.9.tar.gz)
+
+build () {
+        cd $name-$version
+        ./configure --prefix=/usr
+        make
+        make DESTDIR=$PKG install
+} 

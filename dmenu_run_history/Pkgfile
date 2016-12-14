@@ -1,0 +1,17 @@
+# Description: dmenu command history
+# URL:         http://tools.suckless.org/dmenu/scripts/
+# Maintainer:  lemon, lemon at bitmessage dot ch
+# Packager:    lemon, lemon at bitmessage dot ch
+# Depends on:  dmenu
+
+name=dmenu_run_history
+version=4.6
+release=1
+source=(http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history/dmenu_run_history)
+
+build () {
+	mkdir -p $PKG/usr/bin
+	# to call dmenu with specific options, edit the sed line below
+	sed -i 's/dmenu "$@"/dmenu -fn lemon "$@"/' $name
+	install -m 755 "$name" $PKG/usr/bin/"$name"
+}
