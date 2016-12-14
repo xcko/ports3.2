@@ -1,7 +1,7 @@
-# Description:	Programmers calculator for the command line
-# URL:			https://github.com/vapier/pcalc
-# Maintainer:	xcko, xcko at bitmessage dot ch
-# Depends on:
+# Description: Programmers calculator for the command line
+# URL: https://github.com/vapier/pcalc
+# Maintainer: xcko at bitmessage dot ch
+# Depends on: gcc
 
 name=pcalc
 version=3

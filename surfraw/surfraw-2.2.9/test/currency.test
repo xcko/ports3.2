@@ -1,2 +1,0 @@
-currency -from=USD -to=GBP 1
-1.*USD.*=.*\d+\.\d+.*GBP
