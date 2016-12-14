@@ -1,7 +1,6 @@
 # Description:	Chameleon X Cursor Theme in pearl
 # URL:			http://www.kde-look.org/content/show.php?content=38459
-# Maintainer:	lemon, lemon at bitmessage dot ch
-# Packager:		lemon, lemon at bitmessage dot ch
+# Maintainer:	xcko, xcko at bitmessage dot ch
 # Depends on:	xorg-libxcursor
 
 name=xorg-cursor-chameleon-pearl

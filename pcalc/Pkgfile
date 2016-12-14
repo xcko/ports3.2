@@ -1,7 +1,6 @@
 # Description:	Programmers calculator for the command line
 # URL:			https://github.com/vapier/pcalc
-# Maintainer:	lemon, lemon at bitmessage dot ch
-# Packager:		lemon, lemon at bitmessage dot ch
+# Maintainer:	xcko, xcko at bitmessage dot ch
 # Depends on:
 
 name=pcalc

@@ -1,6 +1,6 @@
 # Description: grml's zsh setup as system wide config
 # URL: http://grml.github.com/
-# Maintainer: lemon, at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: zsh
 	
 name=grml-zsh-git

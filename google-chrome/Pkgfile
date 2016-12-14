@@ -1,7 +1,6 @@
 # Description: Browser from Google.
 # URL: https://www.google.com/chrome
-# Maintainer: lemon, lemon at bitmessage dot ch
-# Packager: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm cups gconf
 
 name=google-chrome

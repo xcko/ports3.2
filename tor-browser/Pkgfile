@@ -1,6 +1,6 @@
 # Description: Tor browser bundle
 # URL:
-# Maintainer: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on:
 
 name=tor-browser

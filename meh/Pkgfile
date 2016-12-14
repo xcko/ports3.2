@@ -1,6 +1,6 @@
 # Description: simple image viewer
 # URL: http://www.johnhawthorn.com/meh
-# Maintainer: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: git xorg-libx11 libjpeg-turbo libpng figlib
 # Opt Depends: imagemagick
 

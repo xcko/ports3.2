@@ -1,7 +1,6 @@
 # Description: dmenu command history
 # URL:         http://tools.suckless.org/dmenu/scripts/
-# Maintainer:  lemon, lemon at bitmessage dot ch
-# Packager:    lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  dmenu
 
 name=dmenu_run_history

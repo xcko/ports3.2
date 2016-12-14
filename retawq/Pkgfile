@@ -1,7 +1,6 @@
 # Description: Small ncurses text browser written in C by Arne Thomassen.
 # URL: http://retawq.sourceforge.net/
-# Maintainer: lemon lemon at bitmessage dot ch
-# Packager: lemon lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: gcc ncurses
 
 name=retawq

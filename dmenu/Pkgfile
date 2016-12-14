@@ -1,6 +1,6 @@
 # Description: dynamic menu, originally designed for dwm (with xft support)
 # URL:         http://tools.suckless.org/dmenu/
-# Maintainer:  lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  xorg-libxinerama xorg-libxft xorg-libxrender freetype fontconfig
 
 name=dmenu

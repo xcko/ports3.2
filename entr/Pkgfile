@@ -1,6 +1,6 @@
 # Description: Run arbitrary commands when files change
 # URL: entrproject.org
-# Maintainer: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on:
 
 name=entr

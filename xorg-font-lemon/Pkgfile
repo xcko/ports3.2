@@ -1,7 +1,6 @@
 # Description: Phallus' mod of lime with better kerning, more distinguished characters, and powerline/icon support.
 # URL: https://github.com/phallus/fonts
-# Maintainer: lemon, lemon at bitmessage dot ch
-# Packager: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: git xorg-bdftopcf xorg-mkfontdir xorg-mkfontscale xorg-xset fontconfig xorg-font-util gzip
 
 name=xorg-font-lemon

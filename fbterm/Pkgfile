@@ -1,6 +1,6 @@
 # Description: A terminal emulator for the frame buffer
 # URL: https://code.google.com/archive/p/fbterm/
-# Packager: lemon, lemon at bitmessage dot ch
+# Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: fontconfig
 # Opt Depends: gpm
 

@@ -1,7 +1,6 @@
 # Description: Hide the cursor in X
 # URL:         https://github.com/Airblader/unclutter-xfixes#branch=master
-# Maintainer:  lemon, lemon at bitmessage dot ch
-# Packager:  lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  libxi libx11 libxfixes libev asciidoc
 
 name=unclutter-xfixes

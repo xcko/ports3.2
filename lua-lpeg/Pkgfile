@@ -1,6 +1,6 @@
 # Description: Pattern-matching library for Lua.
 # URL:         http://www.inf.puc-rio.br/~roberto/lpeg
-# Maintainer:  lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  lua
 
 name=lua-lpeg

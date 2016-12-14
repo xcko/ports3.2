@@ -1,6 +1,6 @@
 # Description: Simple window manager.
 # URL:         https://github.com/dcat/swm
-# Maintainer:  lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  git xorg-libxcb
 
 name=swm

@@ -1,7 +1,6 @@
 # Description: ssh library
 # URL:         http://libssh.org
-# Maintainer:  lemon, lemon at bitmessage dot ch
-# Packager:    lemon, lemon at bitmessage dot ch
+# Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  cmake git
 
 name=libssh-git
