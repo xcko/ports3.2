@@ -1,0 +1,12 @@
+drwxr-xr-x	root/root	etc/
+-rwxr-xr-x	root/root	etc/mozpluggerrc
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/bin/
+-rwxr-xr-x	root/root	usr/bin/mozplugger-controller
+-rwxr-xr-x	root/root	usr/bin/mozplugger-helper
+-rwxr-xr-x	root/root	usr/bin/mozplugger-linker
+-rwxr-xr-x	root/root	usr/bin/mozplugger-update
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man7/
+-rwxr-xr-x	root/root	usr/share/man/man7/mozplugger.7.gz

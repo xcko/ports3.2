@@ -1,0 +1,20 @@
+# Description: A Mozilla & Firefox multimedia plugin
+# URL: http://mozplugger.mozdev.org
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: m4, xorg-libx11
+
+name=mozplugger
+version=2.1.6
+release=1
+source=(http://mozplugger.mozdev.org/files/mozplugger-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var \
+	#--enable-always-xembed
+	# uncomment preceding line to use in chromium. Xembed kills keyboard focus.
+
+	make
+	sed -i 's, /etc, ${PKG}/etc,' Makefile
+	make prefix=${PKG}/usr install
+}
