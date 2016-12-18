@@ -1,0 +1,15 @@
+# Description: A 4px wide pixel font
+# URL: https://github.com/romeovs/creep
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: xorg-mkfontdir xorg-mkfontscale fontconfig
+
+name=creep
+version=0.31
+release=1
+source=(https://github.com/romeovs/creep/archive/$version.tar.gz)
+
+build() {
+	cd $name-$version
+
+	install -Dm0664 creep.bdf $PKG/usr/share/fonst/misc/creep.bdf
+}

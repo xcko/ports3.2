@@ -2,7 +2,7 @@
 # URL: http://surf.suckless.org/
 # Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: gtk3 webkitgtk
-# Opt Depends: dmenu
+# Optional: dmenu, st
 
 name=surf2
 version=git

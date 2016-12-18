@@ -2,7 +2,7 @@
 # URL: http://brain-dump.org/projects/vis
 # Maintainer: xcko shrdlu, xcko at bitmessage dot ch
 # Depends on: git ncurses libtermkey
-# Opt depends: lua lpeg
+# Optional: lua lpeg
 
 name=vis
 version=git
@@ -21,6 +21,7 @@ build() {
 	make
 	make DESTDIR=$PKG install
 	rm -f $PKG/usr/share/vis/lexers/README.md
+	rm -rf $PKG/usr/share/vis/doc/
 }
 
 

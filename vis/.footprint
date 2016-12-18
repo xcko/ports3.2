@@ -13,9 +13,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/vis-open.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/vis.1.gz
 drwxr-xr-x	root/root	usr/share/vis/
-drwxr-xr-x	root/root	usr/share/vis/doc/
--rw-r--r--	root/root	usr/share/vis/doc/README.md
--rw-r--r--	root/root	usr/share/vis/doc/config.ld
 lrwxrwxrwx	root/root	usr/share/vis/lexer.lua -> lexers/lexer.lua
 drwxr-xr-x	root/root	usr/share/vis/lexers/
 -rw-r--r--	root/root	usr/share/vis/lexers/LICENSE

@@ -2,7 +2,7 @@
 # URL: https://code.google.com/archive/p/fbterm/
 # Maintainer: xcko, xcko at bitmessage dot ch
 # Depends on: fontconfig
-# Opt Depends: gpm
+# Optional: gpm
 
 name=fbterm
 version=1.7.0
