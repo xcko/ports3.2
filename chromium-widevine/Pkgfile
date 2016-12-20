@@ -1,0 +1,16 @@
+# Description: Browser plugin to view drm content
+# URL: http://www.google.com/chrome
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: chromium
+
+name=chromium-widevine
+version=1.4.8.903
+chrome_ver=55.0.2883.87
+release=1
+source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+
+build() {
+	ar p google-chrome-stable_current_amd64.deb data.tar.xz | tar xJ
+	awk 'match($0,/\(version: \0?([0-9.]+)/,a) {print a[1];}' opt/google/chrome/chrome
+	install -Dm644 $SRC/opt/google/chrome/libwidevinecdm.so -t $PKG/usr/lib/chromium/
+}

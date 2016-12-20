@@ -10,7 +10,7 @@ source=(https://luarocks.org/releases/luarocks-$version.tar.gz)
 
 build() {
 	cd $name-$version
-	./configure --prefix=/usr
+	./configure --prefix=/usr --sysconfdir=/etc/luarocks
 	make build
 	make DESTDIR=$PKG install
 	
