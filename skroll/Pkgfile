@@ -1,0 +1,15 @@
+# Description:  Scroll text to stdout
+# URL:  http://git.z3bra.org/cgit.cgi/
+# Maintainer:  xcko, xcko at bitmessage dot ch
+# Depends on:  
+
+name=skroll
+version=0.6
+release=1
+source=(http://git.z3bra.org/cgit.cgi/skroll/snapshot/$name-$version.tar.gz)
+
+build() {
+    cd "$name-$version"
+
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}

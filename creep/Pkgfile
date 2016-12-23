@@ -11,5 +11,5 @@ source=(https://github.com/romeovs/creep/archive/$version.tar.gz)
 build() {
 	cd $name-$version
 
-	install -Dm0664 creep.bdf $PKG/usr/share/fonst/misc/creep.bdf
+	install -Dm0664 creep.bdf $PKG/usr/share/fonts/misc/creep.bdf
 }
