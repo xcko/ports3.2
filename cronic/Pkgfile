@@ -1,0 +1,13 @@
+# Description: Make cron only output sane email
+# URL: http://habilis.net/cronic
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: bash
+
+name=cronic
+version=3
+release=1
+source=(http://habilis.net/cronic/cronic)
+
+build() {
+	install -Dm755 $SRC/cronic $PKG/usr/bin/cronic
+}
