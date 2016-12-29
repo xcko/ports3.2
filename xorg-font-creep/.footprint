@@ -1,5 +1,5 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/share/
-drwxr-xr-x	root/root	usr/share/fonst/
-drwxr-xr-x	root/root	usr/share/fonst/misc/
--rw-rw-r--	root/root	usr/share/fonst/misc/creep.bdf
+drwxr-xr-x	root/root	usr/share/fonts/
+drwxr-xr-x	root/root	usr/share/fonts/misc/
+-rw-rw-r--	root/root	usr/share/fonts/misc/creep.bdf
