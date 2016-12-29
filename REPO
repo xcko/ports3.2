@@ -17,7 +17,6 @@ d:retawq
 d:cronic
 d:dvtm
 d:swm
-d:creep
 d:vis
 d:lua-lpeg
 d:xorg-font-lemon
@@ -26,6 +25,7 @@ d:entr
 d:pcalc
 d:unclutter-xfixes
 d:grml-zsh-git
+d:xorg-font-creep
 d:colors
 f:807dbb7fa6034e2e830cda3e57b52b05:surfraw/.md5sum
 f:b865cb00d4c81df3ae8bc7f7e1f99a05:surfraw/.footprint
@@ -88,10 +88,6 @@ f:62b970b966dd54dee4ceba227339f04f:swm/.md5sum
 f:944c3117a0c0ba6361aa9608ba024e0c:swm/.footprint
 f:c1815d90a4e6b3691139dbb01d80938a:swm/config.h
 f:053ae1a8966706598fd50669d9bfecf4:swm/Pkgfile
-f:382cb47e9bd4fc214f808c5b6d786645:creep/post-install
-f:b2c967bdc0f20905d9fa4f3bc8803798:creep/.md5sum
-f:37e9d093515b090201614397f31ed5da:creep/.footprint
-f:12dfac2df968c1e51486e59b96cc6313:creep/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:vis/.md5sum
 f:ff565c13ef375b747f761023f403935b:vis/.footprint
 f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile
@@ -117,6 +113,10 @@ f:67a75d3669b1e1a6e5de2bf7ada526c9:unclutter-xfixes/Pkgfile
 f:b9d9dcbac89c36dc05b963116df4c6b6:grml-zsh-git/.md5sum
 f:800943259cae79c6580e2ad64d8b5e14:grml-zsh-git/.footprint
 f:3a8ea9c893854a5c0d47a72c20e21cb6:grml-zsh-git/Pkgfile
+f:382cb47e9bd4fc214f808c5b6d786645:xorg-font-creep/post-install
+f:b2c967bdc0f20905d9fa4f3bc8803798:xorg-font-creep/.md5sum
+f:37e9d093515b090201614397f31ed5da:xorg-font-creep/.footprint
+f:8c26148951d0d10180a1de82170a8506:xorg-font-creep/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:colors/.md5sum
 f:c2a4d223b05bc381f06c47ff60117257:colors/.footprint
 f:5772e99f6db9d890379fc02e11dfc349:colors/Pkgfile
