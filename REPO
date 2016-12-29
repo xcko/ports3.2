@@ -94,14 +94,14 @@ f:37e9d093515b090201614397f31ed5da:creep/.footprint
 f:12dfac2df968c1e51486e59b96cc6313:creep/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:vis/.md5sum
 f:ff565c13ef375b747f761023f403935b:vis/.footprint
-f:3102bacf421cf1672bb42c9548697f66:vis/Pkgfile
+f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile
 f:a965b3887b29e563c2f0d500eaae1d15:lua-lpeg/.md5sum
 f:3605b6cf55d6cff86634476138f74084:lua-lpeg/.footprint
 f:3654b82154374b77022d0bb1a0a573a4:lua-lpeg/Pkgfile
 f:f7056b20fa25e1ed4da0f59c61451f5c:xorg-font-lemon/post-install
 f:d41d8cd98f00b204e9800998ecf8427e:xorg-font-lemon/.md5sum
-f:ea1ebbd948348d6871e16d8d8c7335bf:xorg-font-lemon/.footprint
-f:d2cefd5346af2aca467328186ba745cd:xorg-font-lemon/Pkgfile
+f:45972e4d614208fc86c0b740183f6dae:xorg-font-lemon/.footprint
+f:813f0f70b4e5a8d154a236befb667ffb:xorg-font-lemon/Pkgfile
 f:68d68e976e0e9fe69f1f5e2416a96b8c:google-chrome/.md5sum
 f:052d84145f4b32e329195fb77fc7232f:google-chrome/.footprint
 f:27d0c66636844d5694587e4247b0dec1:google-chrome/Pkgfile
