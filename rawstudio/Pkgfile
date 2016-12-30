@@ -1,0 +1,17 @@
+# Description: A raw-image converter written in GTK+
+# URL: http://rawstudio.org/
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: libgphoto2 lensfun gconf fftw exiv2
+
+name=rawstudio
+version=2.0
+release=1
+source=(https://rawstudio.org/files/release/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./autogen.sh
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

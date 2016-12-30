@@ -1,0 +1,16 @@
+# Description: Database of photographic lenses
+# URL: http://lensfun.sourcefourge.net
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: python, libpng, doxygen, cmake
+
+name=lensfun
+version=0.3.2
+release=1
+source=(http://sourceforge.net/projects/lensfun/files/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	cmake -DCMAKE_INSTALL_PREFIX=/usr -DCMAKE_INSTALL_LIBDIR=lib .
+	make all
+	make DESTDIR=$PKG install
+}
