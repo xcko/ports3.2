@@ -8,6 +8,7 @@ d:lensfun
 d:meh
 d:mozplugger
 d:dmenu
+d:gtkam
 d:xorg-cursor-chameleon-pearl
 d:xorg-font-gohu
 d:swarp
@@ -29,6 +30,7 @@ d:unclutter-xfixes
 d:grml-zsh-git
 d:xorg-font-creep
 d:colors
+d:libexif-gtk
 f:807dbb7fa6034e2e830cda3e57b52b05:surfraw/.md5sum
 f:b865cb00d4c81df3ae8bc7f7e1f99a05:surfraw/.footprint
 f:d889730314d1e21c1c7ddce9ad3c8618:surfraw/Pkgfile
@@ -60,6 +62,7 @@ f:62bbd6be76b34f1bb35c8da7b6199554:dmenu/.md5sum
 f:aa4856022bf28ed9a0f18ac907aaabdd:dmenu/.footprint
 f:43e05044234853914accaef997aa6002:dmenu/config.h
 f:5de865cf81c0f34286650359ebe5c471:dmenu/Pkgfile
+f:fd7bbfd8b16e49be0de9485b0b89f868:gtkam/Pkgfile
 f:2335be6bf47af20cdf03758c9686fa18:xorg-cursor-chameleon-pearl/.md5sum
 f:3fa7950e11ea250d3c9a140ebd68cad1:xorg-cursor-chameleon-pearl/.footprint
 f:034fa165336f80b4eac067b609b359ce:xorg-cursor-chameleon-pearl/Pkgfile
@@ -126,3 +129,6 @@ f:8c26148951d0d10180a1de82170a8506:xorg-font-creep/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:colors/.md5sum
 f:c2a4d223b05bc381f06c47ff60117257:colors/.footprint
 f:5772e99f6db9d890379fc02e11dfc349:colors/Pkgfile
+f:ed5b20bc0846b2259bc98b25680d4ee9:libexif-gtk/.md5sum
+f:31523d0e026ca338da7c242969e438d3:libexif-gtk/.footprint
+f:822cb7fcc87e87cf4e5f065412665c7c:libexif-gtk/Pkgfile
