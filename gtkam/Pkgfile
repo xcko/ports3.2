@@ -1,0 +1,25 @@
+# Description: A GTK frontend for libghoto2
+# URL: http://gphoto.sourceforge.net/proj/gtkam
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: libgphoto2 libexif-gtk gdk-pixbuf
+# Opt Depends: gimp
+
+name=gtkam
+version=1.0
+release=1
+source=(http://downloads.sourceforge.net/project/gphoto/$name/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure \
+		--disable-nls \
+		--disable-scrollkeeper \
+		--without-bonobo \
+		--without-gnome \
+		--prefix=/usr \
+		--without-gimp
+
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/doc/gtkam/
+}
