@@ -1,0 +1,16 @@
+# Description: GTK frontend to the libexif library
+# URL: http://libexif.sourceforge.net
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: gtk libexif
+
+name=libexif-gtk
+version=0.4.0
+release=1
+source=(http://downloads.sourceforge.net/project/libexif/$name/$version/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr --disable-nls
+	make
+	make DESTDIR=$PKG install
+}

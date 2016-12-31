@@ -1,0 +1,25 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+drwxr-xr-x	root/root	usr/include/libexif-gtk/
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-browser.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-content-list.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-ascii.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-copyright.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-date.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-flash.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-generic.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-number.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-option.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-rational.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-resolution.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-user-comment.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry-version.h
+-rw-r--r--	root/root	usr/include/libexif-gtk/gtk-exif-entry.h
+drwxr-xr-x	root/root	usr/lib/
+-rw-r--r--	root/root	usr/lib/libexif-gtk.a
+-rwxr-xr-x	root/root	usr/lib/libexif-gtk.la
+lrwxrwxrwx	root/root	usr/lib/libexif-gtk.so -> libexif-gtk.so.5.1.0
+lrwxrwxrwx	root/root	usr/lib/libexif-gtk.so.5 -> libexif-gtk.so.5.1.0
+-rwxr-xr-x	root/root	usr/lib/libexif-gtk.so.5.1.0
+drwxr-xr-x	root/root	usr/lib/pkgconfig/
+-rw-r--r--	root/root	usr/lib/pkgconfig/libexif-gtk.pc
