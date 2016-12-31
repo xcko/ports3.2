@@ -62,7 +62,9 @@ f:62bbd6be76b34f1bb35c8da7b6199554:dmenu/.md5sum
 f:aa4856022bf28ed9a0f18ac907aaabdd:dmenu/.footprint
 f:43e05044234853914accaef997aa6002:dmenu/config.h
 f:5de865cf81c0f34286650359ebe5c471:dmenu/Pkgfile
-f:fd7bbfd8b16e49be0de9485b0b89f868:gtkam/Pkgfile
+f:82216a5f4c507d4e20730a16bc630298:gtkam/.md5sum
+f:e7c19da5231c2f1bc5c1fe7332b5f55d:gtkam/.footprint
+f:2588552efe7fb5f3b4d77fe6ac8c9686:gtkam/Pkgfile
 f:2335be6bf47af20cdf03758c9686fa18:xorg-cursor-chameleon-pearl/.md5sum
 f:3fa7950e11ea250d3c9a140ebd68cad1:xorg-cursor-chameleon-pearl/.footprint
 f:034fa165336f80b4eac067b609b359ce:xorg-cursor-chameleon-pearl/Pkgfile
