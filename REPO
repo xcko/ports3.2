@@ -1,3 +1,4 @@
+d:darktable
 d:surfraw
 d:chromium-widevine
 d:surf2
@@ -21,7 +22,6 @@ d:dvtm
 d:swm
 d:vis
 d:lua-lpeg
-d:rawstudio
 d:xorg-font-lemon
 d:google-chrome
 d:entr
@@ -104,7 +104,6 @@ f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile
 f:a965b3887b29e563c2f0d500eaae1d15:lua-lpeg/.md5sum
 f:3605b6cf55d6cff86634476138f74084:lua-lpeg/.footprint
 f:3654b82154374b77022d0bb1a0a573a4:lua-lpeg/Pkgfile
-f:ca38f3a2fade3122aebcec4c7e2a2eb6:rawstudio/Pkgfile
 f:f7056b20fa25e1ed4da0f59c61451f5c:xorg-font-lemon/post-install
 f:d41d8cd98f00b204e9800998ecf8427e:xorg-font-lemon/.md5sum
 f:45972e4d614208fc86c0b740183f6dae:xorg-font-lemon/.footprint
