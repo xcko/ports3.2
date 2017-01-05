@@ -1,7 +1,7 @@
-d:darktable
 d:surfraw
 d:chromium-widevine
 d:surf2
+d:flickcurl
 d:dmenu_run_history
 d:libssh-git
 d:skroll
@@ -42,6 +42,9 @@ f:109754977af6ccb8e611d1e26542913e:surf2/.footprint
 f:3b2f3f487dcdabd622d72941053f4bca:surf2/config.h
 f:02bf8524a69235374a79e3b423a876de:surf2/README
 f:e94819565d61004a5187f7ff2f529229:surf2/Pkgfile
+f:84deabbcddacd01762974e023693b343:flickcurl/.md5sum
+f:a8ff7bfbd8e716aa5a09b74fe8243d70:flickcurl/.footprint
+f:488139252319aacc1107f5eae171610f:flickcurl/Pkgfile
 f:4c94dd5b44f80372abf3590b5aafd4e5:dmenu_run_history/.md5sum
 f:951a4e231a61078632ff52d5cbbbc321:dmenu_run_history/.footprint
 f:99eae3a73d5febe9a44a2581af465d19:dmenu_run_history/Pkgfile
@@ -99,7 +102,7 @@ f:944c3117a0c0ba6361aa9608ba024e0c:swm/.footprint
 f:c1815d90a4e6b3691139dbb01d80938a:swm/config.h
 f:053ae1a8966706598fd50669d9bfecf4:swm/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:vis/.md5sum
-f:ff565c13ef375b747f761023f403935b:vis/.footprint
+f:a32b041200d0c4bdb97d428c67e85d8e:vis/.footprint
 f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile
 f:a965b3887b29e563c2f0d500eaae1d15:lua-lpeg/.md5sum
 f:3605b6cf55d6cff86634476138f74084:lua-lpeg/.footprint

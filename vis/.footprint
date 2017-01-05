@@ -15,7 +15,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 drwxr-xr-x	root/root	usr/share/vis/
 lrwxrwxrwx	root/root	usr/share/vis/lexer.lua -> lexers/lexer.lua
 drwxr-xr-x	root/root	usr/share/vis/lexers/
--rw-r--r--	root/root	usr/share/vis/lexers/LICENSE
 -rw-r--r--	root/root	usr/share/vis/lexers/actionscript.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/ada.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/ansi_c.lua
@@ -111,6 +110,7 @@ drwxr-xr-x	root/root	usr/share/vis/lexers/
 -rw-r--r--	root/root	usr/share/vis/lexers/pure.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/python.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/rails.lua
+-rw-r--r--	root/root	usr/share/vis/lexers/rc.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/rebol.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/rest.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/rexx.lua

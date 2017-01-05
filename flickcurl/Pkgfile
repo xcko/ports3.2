@@ -1,0 +1,18 @@
+# Description: C library for the Flickr API
+# URL: http://librdf.org/flickcurl
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: curl libxml2
+# Opt depends: raptor
+
+name=flickcurl
+version=1.26
+release=1
+source=(http://download.dajobe.org/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+	rm -r $PKG/usr/share/gtk-doc
+}
