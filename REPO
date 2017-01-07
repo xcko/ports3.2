@@ -37,11 +37,11 @@ f:d889730314d1e21c1c7ddce9ad3c8618:surfraw/Pkgfile
 f:68d68e976e0e9fe69f1f5e2416a96b8c:chromium-widevine/.md5sum
 f:32290fc768b30afbad33d65c624d688d:chromium-widevine/.footprint
 f:033e5908b5517d6ca970bd21f0743c0b:chromium-widevine/Pkgfile
-f:4cc661d4ddb78b3ae8b30dfaca7c5e87:surf2/.md5sum
+f:8d0e42276de78bacd338eccd060f22c3:surf2/.md5sum
 f:109754977af6ccb8e611d1e26542913e:surf2/.footprint
-f:3b2f3f487dcdabd622d72941053f4bca:surf2/config.h
+f:3d465f7f264e9394d0ba2d11e42a7dbb:surf2/config.h
 f:02bf8524a69235374a79e3b423a876de:surf2/README
-f:e94819565d61004a5187f7ff2f529229:surf2/Pkgfile
+f:e05ab76b8468ab0d6eb32d8133aa2e07:surf2/Pkgfile
 f:84deabbcddacd01762974e023693b343:flickcurl/.md5sum
 f:a8ff7bfbd8e716aa5a09b74fe8243d70:flickcurl/.footprint
 f:488139252319aacc1107f5eae171610f:flickcurl/Pkgfile
@@ -61,7 +61,7 @@ f:e4f0dcbfc877665ef3d3191c1255f6f0:meh/Pkgfile
 f:41186d7417b5ee978a5af4e6a69821eb:mozplugger/.md5sum
 f:a5d16dfdc4ae1ffd5fcdc633510f0f46:mozplugger/.footprint
 f:341e76f3ca6bd98915ab1cec45034fe0:mozplugger/Pkgfile
-f:62bbd6be76b34f1bb35c8da7b6199554:dmenu/.md5sum
+f:583decd523b3efce406d852a0faa28f9:dmenu/.md5sum
 f:aa4856022bf28ed9a0f18ac907aaabdd:dmenu/.footprint
 f:43e05044234853914accaef997aa6002:dmenu/config.h
 f:5de865cf81c0f34286650359ebe5c471:dmenu/Pkgfile
@@ -92,7 +92,7 @@ f:ff1b74e2379519f9e95b88c57450d32a:cronic/.md5sum
 f:c453f20d6339d5da9aba2482f29a5e5d:cronic/.footprint
 f:1b95fb89d3bbe83b934d6617e5a0104b:cronic/README
 f:c7cab0726c86a8de51d2869503942d74:cronic/Pkgfile
-f:cf74fd4e932ae9aca73209338c8a5077:dvtm/.md5sum
+f:ea72fca332fb42dab50434a15ab752c0:dvtm/.md5sum
 f:6c59a64379b39e407b8ace7f47a634ea:dvtm/.footprint
 f:243bc2d4085c08d9b748f892f5950a00:dvtm/config.h
 f:d18c362b4002324b1a9d086ab1cba9bd:dvtm/README
