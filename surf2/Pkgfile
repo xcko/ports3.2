@@ -8,12 +8,13 @@ name=surf2
 version=git
 release=1
 source=(config.h)
+gitsource=http://git.suckless.org/surf
 
 build() {
 	if cd "$name" 2> /dev/null; then
 		git pull
 	else
-		git clone http://git.suckless.org/surf --branch surf-webkit2 --single-branch "$name"
+		git clone "$gitsource" --branch surf-webkit2 --single-branch "$name"
 		cd "$name"
 	fi
 	
