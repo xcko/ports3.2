@@ -1,0 +1,28 @@
+# Description: A fully encrypted, private, distributed network library for personal communications.
+# URL: https://tox.chat/
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: autoconf libsodium
+
+name=c-toxcore
+version=git-20be9a8c
+sversion=20be9a8c5b3cf41fc766123bcc6e1efbe9b2b86e
+release=1
+source=()
+gitsource=https://github.com/TokTok/c-toxcore.git
+
+build() {
+	if cd $name 2> /dev/null; then
+		git reset --hard
+		git pull $gitsource
+	else
+		git clone $gitsource $name
+		cd $name
+	fi
+
+	git checkout $sversion
+
+	autoreconf -i
+	./configure --prefix=/usr
+	make
+	make DESTDIR=$PKG install
+}

@@ -21,6 +21,7 @@ d:cronic
 d:dvtm
 d:swm
 d:libsodium
+d:c-toxcore
 d:vis
 d:lua-lpeg
 d:xorg-font-lemon
@@ -105,6 +106,9 @@ f:053ae1a8966706598fd50669d9bfecf4:swm/Pkgfile
 f:afe1a658916c31124d51b36f9b8f2a72:libsodium/.md5sum
 f:b4c88287cba4d6029a24083fdfb73673:libsodium/.footprint
 f:07b3e5d80ea9cfcb691865d2d359d31e:libsodium/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:c-toxcore/.md5sum
+f:e78a22baf7c737b23339c7ac359bc4b7:c-toxcore/.footprint
+f:b4c50614d218310e6680e5c8ee10e009:c-toxcore/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:vis/.md5sum
 f:a32b041200d0c4bdb97d428c67e85d8e:vis/.footprint
 f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile
