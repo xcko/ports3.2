@@ -20,6 +20,7 @@ d:retawq
 d:cronic
 d:dvtm
 d:swm
+d:libsodium
 d:vis
 d:lua-lpeg
 d:xorg-font-lemon
@@ -61,7 +62,7 @@ f:e4f0dcbfc877665ef3d3191c1255f6f0:meh/Pkgfile
 f:41186d7417b5ee978a5af4e6a69821eb:mozplugger/.md5sum
 f:a5d16dfdc4ae1ffd5fcdc633510f0f46:mozplugger/.footprint
 f:341e76f3ca6bd98915ab1cec45034fe0:mozplugger/Pkgfile
-f:583decd523b3efce406d852a0faa28f9:dmenu/.md5sum
+f:ea08d3a7574542f8c4bacaa365da6806:dmenu/.md5sum
 f:aa4856022bf28ed9a0f18ac907aaabdd:dmenu/.footprint
 f:43e05044234853914accaef997aa6002:dmenu/config.h
 f:5de865cf81c0f34286650359ebe5c471:dmenu/Pkgfile
@@ -92,7 +93,7 @@ f:ff1b74e2379519f9e95b88c57450d32a:cronic/.md5sum
 f:c453f20d6339d5da9aba2482f29a5e5d:cronic/.footprint
 f:1b95fb89d3bbe83b934d6617e5a0104b:cronic/README
 f:c7cab0726c86a8de51d2869503942d74:cronic/Pkgfile
-f:ea72fca332fb42dab50434a15ab752c0:dvtm/.md5sum
+f:cf74fd4e932ae9aca73209338c8a5077:dvtm/.md5sum
 f:6c59a64379b39e407b8ace7f47a634ea:dvtm/.footprint
 f:243bc2d4085c08d9b748f892f5950a00:dvtm/config.h
 f:d18c362b4002324b1a9d086ab1cba9bd:dvtm/README
@@ -101,6 +102,9 @@ f:62b970b966dd54dee4ceba227339f04f:swm/.md5sum
 f:944c3117a0c0ba6361aa9608ba024e0c:swm/.footprint
 f:c1815d90a4e6b3691139dbb01d80938a:swm/config.h
 f:053ae1a8966706598fd50669d9bfecf4:swm/Pkgfile
+f:afe1a658916c31124d51b36f9b8f2a72:libsodium/.md5sum
+f:b4c88287cba4d6029a24083fdfb73673:libsodium/.footprint
+f:07b3e5d80ea9cfcb691865d2d359d31e:libsodium/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:vis/.md5sum
 f:a32b041200d0c4bdb97d428c67e85d8e:vis/.footprint
 f:077a8bd5d9ef5e1d25c2b0840a32e746:vis/Pkgfile

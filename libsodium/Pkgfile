@@ -1,0 +1,18 @@
+# Description:  a modern, easy-to-use software library for encryption, decryption, signatures, password hashing and more
+# URL:  http://doc.libsodium.org/
+# Maintainer:  z3bra, willy at mailoo dot org
+# Depends on:  
+
+name=libsodium
+version=1.0.8
+release=1
+source=(https://download.$name.org/$name/releases/$name-$version.tar.gz)
+
+build() {
+    cd "$name-$version"
+
+    ./configure --prefix=/usr
+    make && make check
+    make DESTDIR=$PKG PREFIX=/usr MANPREFIX=/usr/share/man install
+}
+# vim: set ft=sh ts=4 et:
