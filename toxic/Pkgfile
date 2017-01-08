@@ -1,0 +1,27 @@
+# Description: An ncurses-based Tox client
+# URL: https://github.com/JFreegman/toxic
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: ncurses c-toxcore curl qrencode 
+# Opt Depends: libnotify openal
+
+name=toxic
+version=git-7a7402f
+sversion=7a7402ff866e824591e38873d9e0229a55e4ac21
+release=1
+source=()
+gitsource=https://github.com/JFreegman/toxic.git
+
+build() {
+	if cd $name 2> /dev/null; then
+		git reset --hard
+		git pull $gitsource
+	else
+		git clone $gitsource $name
+		cd $name
+	fi
+
+	git checkout $sversion
+
+	make PREFIX=/usr
+	make DESTDIR=$PKG install
+}
