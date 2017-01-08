@@ -86,8 +86,8 @@ f:08a46fef31550b0fa8232d937f5b5243:fbterm/.md5sum
 f:7aca7bdf91f0e4c0db5ed956878f5fa0:fbterm/.footprint
 f:354b63e858cd8a0b3cb2c711f842160c:fbterm/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:toxic/.md5sum
-f:7d260310e834d4a8b0e5e84767dceacc:toxic/.footprint
-f:16132c14d1960e006fd36fae027583d0:toxic/Pkgfile
+f:19604dea3ebb3f7ffff3cd4e22a8799a:toxic/.footprint
+f:ddf2ad1a32747ac2b0d3e49c5b960cf9:toxic/Pkgfile
 f:4af7894cd78076582d8d0d53331cafac:libmpack/.md5sum
 f:69938221c0397e35bda4018dfa8f6c21:libmpack/.footprint
 f:e05b8e10647f70bbcd1d286919e9af52:libmpack/Pkgfile

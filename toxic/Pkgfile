@@ -23,5 +23,5 @@ build() {
 	git checkout $sversion
 
 	make PREFIX=/usr
-	make DESTDIR=$PKG install
+	make DESTDIR=$PKG PREFIX=/usr install
 }
