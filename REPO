@@ -34,6 +34,7 @@ d:grml-zsh-git
 d:xorg-font-creep
 d:colors
 d:libexif-gtk
+d:libircclient
 f:807dbb7fa6034e2e830cda3e57b52b05:surfraw/.md5sum
 f:b865cb00d4c81df3ae8bc7f7e1f99a05:surfraw/.footprint
 f:d889730314d1e21c1c7ddce9ad3c8618:surfraw/Pkgfile
@@ -148,3 +149,6 @@ f:5772e99f6db9d890379fc02e11dfc349:colors/Pkgfile
 f:ed5b20bc0846b2259bc98b25680d4ee9:libexif-gtk/.md5sum
 f:31523d0e026ca338da7c242969e438d3:libexif-gtk/.footprint
 f:822cb7fcc87e87cf4e5f065412665c7c:libexif-gtk/Pkgfile
+f:567a284f1cbd2a6528bced4f4046a8f9:libircclient/.md5sum
+f:3abecb8919bb6e20e6ca5577f1ae359b:libircclient/.footprint
+f:262b748dcdc484aa184e14610e69b563:libircclient/Pkgfile

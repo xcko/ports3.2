@@ -1,0 +1,14 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/libirc_errors.h
+-rw-r--r--	root/root	usr/include/libirc_events.h
+-rw-r--r--	root/root	usr/include/libirc_options.h
+-rw-r--r--	root/root	usr/include/libirc_rfcnumeric.h
+-rw-r--r--	root/root	usr/include/libircclient.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libircclient.so -> libircclient.so.1
+-rwxr-xr-x	root/root	usr/lib/libircclient.so.1
+drwxr-xr-x	root/root	usr/share/
+drwxr-xr-x	root/root	usr/share/man/
+drwxr-xr-x	root/root	usr/share/man/man1/
+-rw-r--r--	root/root	usr/share/man/man1/libircclient.1.gz

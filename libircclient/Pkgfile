@@ -1,0 +1,24 @@
+# Description: Small fast portable c library for writing irc clients and bots
+# URL: http://www.ulduzsoft.com/libircclient/
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: openssl
+
+name=libircclient
+version=1.9
+release=1
+source=(https://downloads.sourceforge.net/sourceforge/$name/$name-$version.tar.gz)
+
+build() {
+	cd $name-$version
+	./configure \
+		--prefix=/usr \
+		--libdir=/usr/lib \
+		--enable-openssl \
+		--enable-shared \
+		--enable-ipv6
+
+	make
+	make DESTDIR=$PKG install
+	gzip man/libircclient.1
+	install -Dm644 man/libircclient.1.gz $PKG/usr/share/man/man1/libircclient.1.gz
+}
