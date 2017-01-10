@@ -30,6 +30,7 @@ d:google-chrome
 d:entr
 d:pcalc
 d:unclutter-xfixes
+d:termbox
 d:grml-zsh-git
 d:xorg-font-creep
 d:colors
@@ -136,6 +137,9 @@ f:dfe28ab977c2b5e8ed991a7553719fbd:pcalc/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:unclutter-xfixes/.md5sum
 f:088ac79defb785be274aacfe72a1270c:unclutter-xfixes/.footprint
 f:67a75d3669b1e1a6e5de2bf7ada526c9:unclutter-xfixes/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:termbox/.md5sum
+f:4808b54b8840dd7c9dfd3a33a864003b:termbox/.footprint
+f:f4d890162951dd3ed3f7f6d2dbb8ecb7:termbox/Pkgfile
 f:b9d9dcbac89c36dc05b963116df4c6b6:grml-zsh-git/.md5sum
 f:800943259cae79c6580e2ad64d8b5e14:grml-zsh-git/.footprint
 f:3a8ea9c893854a5c0d47a72c20e21cb6:grml-zsh-git/Pkgfile

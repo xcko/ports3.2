@@ -1,0 +1,7 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/include/
+-rw-r--r--	root/root	usr/include/termbox.h
+drwxr-xr-x	root/root	usr/lib/
+lrwxrwxrwx	root/root	usr/lib/libtermbox.so -> libtermbox.so.1.0.0
+lrwxrwxrwx	root/root	usr/lib/libtermbox.so.1 -> libtermbox.so.1.0.0
+-rwxr-xr-x	root/root	usr/lib/libtermbox.so.1.0.0

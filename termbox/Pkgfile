@@ -1,0 +1,27 @@
+# Description: Library for writing text-based user interfaces
+# URL: http://code.google.com/p/termbox
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: glibc
+
+name=termbox
+version=git-f21afe6
+sversion=f21afe6035e1392c19c3dabb252bcdb528b6567c
+release=1
+source=()
+gitsource=https://github.com/nsf/termbox.git
+
+build() {
+	if cd $name 2> /dev/null; then
+		git reset --hard
+		git pull $gitsource
+	else
+		git clone $gitsource $name
+		cd $name
+	fi
+
+	git checkout $sversion
+
+	./waf configure --prefix=/usr
+	./waf
+	./waf install --targets=termbox_shared --destdir=$PKG
+}
