@@ -4,9 +4,9 @@
 # Depends on: dbus-glib gperf gtk libevent libexif libgcrypt mesa3d ninja nss pciutils speech-dispatcher xorg-libxscrnsaver xorg-libxt xorg-libxtst yasm cups gconf
 
 name=google-chrome
-version=55.0.2883.87
+version=stable
 release=1
-source=(https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb)
+source=(https://dl.google.com/linux/direct/$name-stable_current_amd64.deb)
 
 build() {
   ar p google-chrome-stable_current_amd64.deb data.tar.xz | tar xJ
