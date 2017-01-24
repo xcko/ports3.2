@@ -52,7 +52,7 @@ f:a8ff7bfbd8e716aa5a09b74fe8243d70:flickcurl/.footprint
 f:488139252319aacc1107f5eae171610f:flickcurl/Pkgfile
 f:4c94dd5b44f80372abf3590b5aafd4e5:dmenu_run_history/.md5sum
 f:951a4e231a61078632ff52d5cbbbc321:dmenu_run_history/.footprint
-f:99eae3a73d5febe9a44a2581af465d19:dmenu_run_history/Pkgfile
+f:a43ef40bd8213fb0ab10a7b8cba21ee2:dmenu_run_history/Pkgfile
 f:d41d8cd98f00b204e9800998ecf8427e:libssh-git/.md5sum
 f:0f61ec1662f4c39ea5476e0314f3b218:libssh-git/.footprint
 f:4af3f813e8f409f21323da9683047f64:libssh-git/Pkgfile
@@ -126,8 +126,8 @@ f:d41d8cd98f00b204e9800998ecf8427e:xorg-font-lemon/.md5sum
 f:45972e4d614208fc86c0b740183f6dae:xorg-font-lemon/.footprint
 f:813f0f70b4e5a8d154a236befb667ffb:xorg-font-lemon/Pkgfile
 f:68d68e976e0e9fe69f1f5e2416a96b8c:google-chrome/.md5sum
-f:052d84145f4b32e329195fb77fc7232f:google-chrome/.footprint
-f:158a867013660d0da221003e421e3b9a:google-chrome/Pkgfile
+f:cf0855f1ce9a94607a2f3779f6e586ec:google-chrome/.footprint
+f:5d252b464e95a5c1dce47cb93d439822:google-chrome/Pkgfile
 f:7d013dccbdcb69ffb10dfe2c666e9892:entr/.md5sum
 f:ad167a58656e8e0b2c33c4b9fca205c5:entr/.footprint
 f:ff7fc393592eb05fe3bb44a9cc52879c:entr/Pkgfile

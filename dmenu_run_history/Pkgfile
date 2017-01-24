@@ -10,7 +10,5 @@ source=(http://tools.suckless.org/dmenu/scripts/dmenu_run_with_command_history/d
 
 build () {
 	mkdir -p $PKG/usr/bin
-	# to call dmenu with specific options, edit the sed line below
-	sed -i 's/dmenu "$@"/dmenu -fn lemon "$@"/' $name
 	install -m 755 "$name" $PKG/usr/bin/"$name"
 }

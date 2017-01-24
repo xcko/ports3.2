@@ -12,16 +12,17 @@ build() {
   ar p google-chrome-stable_current_amd64.deb data.tar.xz | tar xJ
   mv opt $PKG/opt
   chmod 4755 $PKG/opt/google/chrome/chrome-sandbox
+
+  # remove what we don't need
   rm -r $PKG/opt/google/chrome/cron
-  rm $PKG/opt/google/chrome/*.png
-  rm $PKG/opt/google/chrome/product_logo_32.xpm
-  rm $PKG/opt/google/chrome/snapshot_blob.bin
-  rm -r $PKG/opt/google/chrome/default*
   mv $PKG/opt/google/chrome/locales/en-US.pak $PKG/
   rm $PKG/opt/google/chrome/locales/*
   mv $PKG/en-US.pak $PKG/opt/google/chrome/locales/
+
+  # make easily executable
   mkdir -p $PKG/opt/bin
   echo '#!/bin/sh' > $PKG/opt/bin/google-chrome
   echo 'exec /opt/google/chrome/google-chrome "$@"' >> $PKG/opt/bin/google-chrome
+
   chmod +x $PKG/opt/bin/google-chrome
 }
