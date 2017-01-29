@@ -1,0 +1,29 @@
+# Description: Brute force attack against Wifi Protected Setup
+# URL: http://code.google.com/p/reaver-wps
+# Maintainer: xcko shrdlu, xcko at bitmessage dot ch
+# Depends on: sqlite3 libpcap aircrack-ng pixiewps
+
+name=reaver-wps-fork-t6x
+version=git
+sversion=707c5749a9dae95ec20e947ca8f07f0eda7b4d8f
+release=1
+source=()
+gitsource=https://github.com/t6x/$name
+
+build() {
+	if cd $name 2> /dev/null; then
+		git reset --hard
+		git pull $gitsource
+	else
+		git clone $gitsource $name
+		cd $name
+	fi
+
+	git checkout $sversion
+	cd src/
+	./configure --prefix=/usr --sysconfdir=/etc
+	make
+	install -Dm755 wash $PKG/usr/bin/wash
+	install -Dm755 reaver $PKG/usr/bin/reaver
+	install -Dm644 ../docs/reaver.1.gz $PKG/usr/share/man/man1/reaver.1.gz
+}

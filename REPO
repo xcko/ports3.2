@@ -10,6 +10,7 @@ d:meh
 d:mozplugger
 d:dmenu
 d:gtkam
+d:reaver-wps-fork-t6x
 d:xorg-cursor-chameleon-pearl
 d:xorg-font-gohu
 d:swarp
@@ -26,6 +27,7 @@ d:c-toxcore
 d:vis
 d:lua-lpeg
 d:xorg-font-lemon
+d:pixiewps
 d:google-chrome
 d:entr
 d:pcalc
@@ -73,6 +75,9 @@ f:5de865cf81c0f34286650359ebe5c471:dmenu/Pkgfile
 f:82216a5f4c507d4e20730a16bc630298:gtkam/.md5sum
 f:e7c19da5231c2f1bc5c1fe7332b5f55d:gtkam/.footprint
 f:2588552efe7fb5f3b4d77fe6ac8c9686:gtkam/Pkgfile
+f:d41d8cd98f00b204e9800998ecf8427e:reaver-wps-fork-t6x/.md5sum
+f:fc44d4dab51ec4e665c25069e1ec8fc3:reaver-wps-fork-t6x/.footprint
+f:b5eb49880fffe2101f193c7ed03ad69f:reaver-wps-fork-t6x/Pkgfile
 f:2335be6bf47af20cdf03758c9686fa18:xorg-cursor-chameleon-pearl/.md5sum
 f:3fa7950e11ea250d3c9a140ebd68cad1:xorg-cursor-chameleon-pearl/.footprint
 f:034fa165336f80b4eac067b609b359ce:xorg-cursor-chameleon-pearl/Pkgfile
@@ -125,6 +130,9 @@ f:f7056b20fa25e1ed4da0f59c61451f5c:xorg-font-lemon/post-install
 f:d41d8cd98f00b204e9800998ecf8427e:xorg-font-lemon/.md5sum
 f:45972e4d614208fc86c0b740183f6dae:xorg-font-lemon/.footprint
 f:813f0f70b4e5a8d154a236befb667ffb:xorg-font-lemon/Pkgfile
+f:23632cf05967d49164218160cdf9e8eb:pixiewps/.md5sum
+f:ddc9eea264fef7f1b1f45cca25b4d447:pixiewps/.footprint
+f:0e97bc8bbdd4435ce016d1a38fd0bc21:pixiewps/Pkgfile
 f:68d68e976e0e9fe69f1f5e2416a96b8c:google-chrome/.md5sum
 f:cf0855f1ce9a94607a2f3779f6e586ec:google-chrome/.footprint
 f:5d252b464e95a5c1dce47cb93d439822:google-chrome/Pkgfile
