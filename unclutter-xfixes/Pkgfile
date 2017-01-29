@@ -1,21 +1,21 @@
 # Description: Hide the cursor in X
-# URL:         https://github.com/Airblader/unclutter-xfixes#branch=master
+# URL:         https://github.com/Airblader/unclutter-xfixes
 # Maintainer:  xcko, xcko at bitmessage dot ch
 # Depends on:  libxi libx11 libxfixes libev asciidoc
 
 name=unclutter-xfixes
 version=git
-branch=master
 release=1
 source=()
+gitsource=git://github.com/Airblader/unclutter-xfixes
 
 build() {
     cd $PKGMK_SOURCE_DIR
 
     if cd $name; then
-            git fetch -q; git reset --hard origin/$branch
+            git pull $gitsouce
     else
-            git clone git://github.com/Airblader/unclutter-xfixes -b $branch $name
+            git clone $gitsource $name
             cd $name
     fi
 

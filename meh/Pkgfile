@@ -8,12 +8,13 @@ name=meh
 version=git
 release=1
 source=()
+gitsource=https://github.com/jhawthorn/meh.git
 
 build() {
 	if cd "$name" 2> /dev/null; then
 		git pull
 	else
-		git clone https://github.com/jhawthorn/meh.git "$name"
+		git clone "$gitsource" "$name"
 		cd "$name"
 	fi
 

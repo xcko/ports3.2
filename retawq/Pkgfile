@@ -6,7 +6,7 @@
 name=retawq
 version=0.2.6c
 release=1
-source=(http://prdownloads.sourceforge.net/retawq/retawq-$version.tar.gz)
+source=(http://prdownloads.sourceforge.net/$name/$name-$version.tar.gz)
 
 build () {
     cd $name-$version

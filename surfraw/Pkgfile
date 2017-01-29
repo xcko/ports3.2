@@ -6,7 +6,7 @@
 name=surfraw
 version=2.2.9
 release=1
-source=(http://surfraw.alioth.debian.org/dist/surfraw-2.2.9.tar.gz)
+source=(http://surfraw.alioth.debian.org/dist/$name-$version.tar.gz)
 
 build () {
         cd $name-$version

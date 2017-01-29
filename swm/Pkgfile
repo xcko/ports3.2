@@ -7,6 +7,7 @@ name=swm
 version=git
 release=1
 source=(config.h)
+gitsource=git://github.com/dcat/$name
 
 build() {
 	cd $PKGMK_SOURCE_DIR
@@ -14,7 +15,7 @@ build() {
 	if cd $name; then
 		git fetch -q; git reset --hard origin/master
 	else
-		git clone git://github.com/dcat/$name $name
+		git clone $gitsource $name
 		cd $name
 	fi
 

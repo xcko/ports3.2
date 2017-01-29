@@ -6,7 +6,7 @@
 name=pcalc
 version=3
 release=1
-source=(https://github.com/vapier/pcalc/archive/v${version}.tar.gz)
+source=(https://github.com/vapier/$name/archive/v$version.tar.gz)
 
 build() {
 	cd $name-$version
