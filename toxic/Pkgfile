@@ -6,7 +6,7 @@
 
 name=toxic
 version=git-7a7402f
-sversion=7a7402ff866e824591e38873d9e0229a55e4ac21
+sversion=e65e3af274e17019790763b9fbcc4298505cf0ad
 release=1
 source=()
 gitsource=https://github.com/JFreegman/toxic.git

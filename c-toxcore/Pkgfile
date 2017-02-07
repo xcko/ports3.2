@@ -4,8 +4,8 @@
 # Depends on: autoconf libsodium
 
 name=c-toxcore
-version=git-20be9a8c
-sversion=20be9a8c5b3cf41fc766123bcc6e1efbe9b2b86e
+version=git
+sversion=6ae33c16cf9e37fda85d70c78b3c2779eb8ca21a
 release=1
 source=()
 gitsource=https://github.com/TokTok/c-toxcore.git
