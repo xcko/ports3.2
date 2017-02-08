@@ -3,12 +3,15 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/vis
 -rwxr-xr-x	root/root	usr/bin/vis-clipboard
 -rwxr-xr-x	root/root	usr/bin/vis-complete
+-rwxr-xr-x	root/root	usr/bin/vis-digraph
 -rwxr-xr-x	root/root	usr/bin/vis-menu
 -rwxr-xr-x	root/root	usr/bin/vis-open
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/vis-clipboard.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/vis-complete.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/vis-digraph.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/vis-menu.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/vis-open.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/vis.1.gz
@@ -124,6 +127,7 @@ drwxr-xr-x	root/root	usr/share/vis/lexers/
 -rw-r--r--	root/root	usr/share/vis/lexers/smalltalk.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/sml.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/snobol4.lua
+-rw-r--r--	root/root	usr/share/vis/lexers/spin.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/sql.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/systemd.lua
 -rw-r--r--	root/root	usr/share/vis/lexers/taskpaper.lua

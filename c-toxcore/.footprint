@@ -9,24 +9,24 @@ drwxr-xr-x	root/root	usr/include/tox/
 drwxr-xr-x	root/root	usr/lib/
 -rw-r--r--	root/root	usr/lib/libtoxav.a
 -rwxr-xr-x	root/root	usr/lib/libtoxav.la
-lrwxrwxrwx	root/root	usr/lib/libtoxav.so -> libtoxav.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libtoxav.so.0 -> libtoxav.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libtoxav.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libtoxav.so -> libtoxav.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libtoxav.so.1 -> libtoxav.so.1.6.0
+-rwxr-xr-x	root/root	usr/lib/libtoxav.so.1.6.0
 -rw-r--r--	root/root	usr/lib/libtoxcore.a
 -rwxr-xr-x	root/root	usr/lib/libtoxcore.la
-lrwxrwxrwx	root/root	usr/lib/libtoxcore.so -> libtoxcore.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libtoxcore.so.0 -> libtoxcore.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libtoxcore.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libtoxcore.so -> libtoxcore.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libtoxcore.so.1 -> libtoxcore.so.1.6.0
+-rwxr-xr-x	root/root	usr/lib/libtoxcore.so.1.6.0
 -rw-r--r--	root/root	usr/lib/libtoxdns.a
 -rwxr-xr-x	root/root	usr/lib/libtoxdns.la
-lrwxrwxrwx	root/root	usr/lib/libtoxdns.so -> libtoxdns.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libtoxdns.so.0 -> libtoxdns.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libtoxdns.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libtoxdns.so -> libtoxdns.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libtoxdns.so.1 -> libtoxdns.so.1.6.0
+-rwxr-xr-x	root/root	usr/lib/libtoxdns.so.1.6.0
 -rw-r--r--	root/root	usr/lib/libtoxencryptsave.a
 -rwxr-xr-x	root/root	usr/lib/libtoxencryptsave.la
-lrwxrwxrwx	root/root	usr/lib/libtoxencryptsave.so -> libtoxencryptsave.so.0.0.0
-lrwxrwxrwx	root/root	usr/lib/libtoxencryptsave.so.0 -> libtoxencryptsave.so.0.0.0
--rwxr-xr-x	root/root	usr/lib/libtoxencryptsave.so.0.0.0
+lrwxrwxrwx	root/root	usr/lib/libtoxencryptsave.so -> libtoxencryptsave.so.1.6.0
+lrwxrwxrwx	root/root	usr/lib/libtoxencryptsave.so.1 -> libtoxencryptsave.so.1.6.0
+-rwxr-xr-x	root/root	usr/lib/libtoxencryptsave.so.1.6.0
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtoxav.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/libtoxcore.pc
